@@ -8,6 +8,6 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: nginx:1.14.2
+    image: acreastus01.azurecr.io/nginx:1.0
     ports:
     - containerPort: 80
