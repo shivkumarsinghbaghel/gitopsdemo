@@ -3,6 +3,8 @@ kind: Pod
 metadata:
   name: nginx
   namespace: nginx
+  annotations:
+    argocd.argoproj.io/image-updater: automatic
 spec:
   containers:
   - name: nginx
