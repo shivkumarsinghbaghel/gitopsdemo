@@ -5,7 +5,11 @@ metadata:
   namespace: nginx
   annotations:
     argocd.argoproj.io/image-updater: automatic
+    argocd-image-updater.argoproj.io/write-back-method: git
+    argocd-image-updater.argoproj.io/image-list: acreastus01.azurecr.io/nginx
 spec:
+  source:
+    repoURL: https://shivkumarbaghel0727@dev.azure.com/shivkumarbaghel0727/test/_git/test
   containers:
   - name: nginx
     image: acreastus01.azurecr.io/nginx:1.0
