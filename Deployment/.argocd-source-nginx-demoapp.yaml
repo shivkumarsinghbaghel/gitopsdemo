@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - acreastus01.azurecr.io/nginx:1.0.5
